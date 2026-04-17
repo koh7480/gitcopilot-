@@ -7,5 +7,17 @@ def factorial(n):
 
 
 if __name__ == "__main__":
+    print('factorial')
     for i in range(11):
         print(f"{i}! = {factorial(i)}")
+
+def factorial_recursive(n):
+    if n == 0:
+        return 1
+    return n * factorial_recursive(n-1)
+
+if __name__ == "__main__":
+    print('factorial_recursive')
+    for i in range(11):
+        print(f"{i}! = {factorial_recursive(i)}")   
+
